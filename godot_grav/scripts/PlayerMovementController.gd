@@ -4,7 +4,8 @@ export (int) var speed = 20
 
 const GRAVITY = 200 #in px
 var velocity = Vector2.ZERO
-var direction = Vector2.ZERO
+var direction = Vector2(0,1)
+var grounded = true
 
 func _input(event):
 	#Movement
@@ -22,16 +23,24 @@ func _input(event):
 		pass #TODO: Interact
 
 func movePlayer(inputDirection):
-	#TODO: Check Grounded -> Can jump
-	direction = inputDirection
+	if grounded:
+		direction = inputDirection
 	
 func _physics_process(delta):
+	print(grounded)
+	
+	
 	#only allows velocity in one cardinal direction at a time 
 	if velocity.normalized() != direction:
-		#velocity = Vector2.ZERO #stop moving
 		velocity = direction * speed
-	
-	print(str(velocity))
 		
 	velocity += direction * GRAVITY * delta
+	
 	velocity = move_and_slide(velocity)
+	
+	if get_slide_count() < 1:
+		grounded = false
+	else: 	
+		grounded = true
+
+			
