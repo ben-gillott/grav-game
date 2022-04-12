@@ -18,7 +18,7 @@ func _input(event):
 	elif event.is_action_pressed("ui_down"):
 		movePlayer(Vector2(0,1))
 	elif event.is_action_pressed("ui_accept"):
-		print("Interact pressed")
+#		print("Interact pressed")
 		$InteractionManager.initiate_interaction()
 
 func movePlayer(inputDirection):
