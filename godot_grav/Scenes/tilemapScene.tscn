@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Art/kenny_tilesheet.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/playerScene.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/NPC1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/PlayerScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Art/kenny_tilesheet.png" type="Texture" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -16,7 +16,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="TileSet" id=4]
 0/name = "kenny_tilesheet.png 0"
-0/texture = ExtResource( 1 )
+0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 64, 64 )
@@ -37,7 +37,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 } ]
 0/z_index = 0
 1/name = "kenny_tilesheet.png 1"
-1/texture = ExtResource( 1 )
+1/texture = ExtResource( 4 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 64, 64, 64 )
@@ -58,7 +58,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 } ]
 1/z_index = 0
 2/name = "kenny_tilesheet.png 2"
-2/texture = ExtResource( 1 )
+2/texture = ExtResource( 4 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 128, 64, 64 )
@@ -83,7 +83,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="HUD" parent="CanvasLayer" instance=ExtResource( 4 )]
+[node name="HUD" parent="CanvasLayer" instance=ExtResource( 2 )]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 4 )
@@ -93,7 +93,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 540, 341 )
 
-[node name="Coin" parent="." instance=ExtResource( 3 )]
-position = Vector2( 587, 340 )
+[node name="NPC1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 581, 356 )

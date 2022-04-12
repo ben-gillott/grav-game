@@ -17,17 +17,16 @@ func _input(event):
 		movePlayer(Vector2(0,-1))
 	elif event.is_action_pressed("ui_down"):
 		movePlayer(Vector2(0,1))
-		
-	#Interaction
-	if event.is_action_pressed("ui_accept"):
-		pass #TODO: Interact
+	elif event.is_action_pressed("ui_accept"):
+		print("Interact pressed")
+		$InteractionManager.initiate_interaction()
 
 func movePlayer(inputDirection):
 	if grounded:
 		direction = inputDirection
 	
 func _physics_process(delta):
-	print(grounded)
+#	print(grounded)
 	
 	
 	#only allows velocity in one cardinal direction at a time 
