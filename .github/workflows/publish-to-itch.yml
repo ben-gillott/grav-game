@@ -20,5 +20,5 @@ jobs:
           CHANNEL: HTML
           ITCH_GAME: gravity
           ITCH_USER: cloudlight-games
-          PACKAGE: gravity.zip
+          PACKAGE: HTML5.zip
           VERSION: ${{ steps.download-HTML5.outputs.version }}
