@@ -12,7 +12,7 @@ collision/safe_margin = 0.001
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 0.0156863, 0.266667, 0.737255, 1 )
+modulate = Color( 0.960784, 0.231373, 0.0392157, 1 )
 scale = Vector2( 62, 62 )
 texture = ExtResource( 1 )
 

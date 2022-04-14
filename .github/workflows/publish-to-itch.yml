@@ -21,4 +21,4 @@ jobs:
           ITCH_GAME: gravity
           ITCH_USER: cloudlight-games
           PACKAGE: gravity.zip
-          VERSION: ${{ steps.download-html.outputs.version }}
+          VERSION: ${{ steps.download-HTML5.outputs.version }}
