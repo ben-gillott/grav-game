@@ -37,9 +37,13 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity)
 	
+	print($RayCasts/BotLeft.get_collider())
+
+
 	if get_slide_count() < 1:
 		grounded = false
 	else: 	
 		grounded = true
 
+#	print(grounded)
 			
