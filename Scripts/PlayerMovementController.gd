@@ -2,7 +2,9 @@ extends KinematicBody2D
 
 export (int) var speed = 20
 
-const GRAVITY = 200 #in px
+onready var tilemap = get_node("../TileMap")
+
+const GRAVITY = 18 #in px
 var velocity = Vector2.ZERO
 var direction = Vector2(0,1)
 var grounded = true
@@ -26,24 +28,13 @@ func movePlayer(inputDirection):
 		direction = inputDirection
 	
 func _physics_process(delta):
-#	print(grounded)
-	
 	
 	#only allows velocity in one cardinal direction at a time 
 	if velocity.normalized() != direction:
 		velocity = direction * speed
 		
-	velocity += direction * GRAVITY * delta
+	velocity += direction * GRAVITY
 	
 	velocity = move_and_slide(velocity)
 	
-	print($RayCasts/BotLeft.get_collider())
-
-
-	if get_slide_count() < 1:
-		grounded = false
-	else: 	
-		grounded = true
-
-#	print(grounded)
-			
+	grounded = $Groundcheck.overlaps_body(tilemap)
