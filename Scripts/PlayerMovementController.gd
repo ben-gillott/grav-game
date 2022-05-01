@@ -9,6 +9,8 @@ var velocity = Vector2.ZERO
 var direction = Vector2(0,1)
 var grounded = true
 
+var just_hit_ground = false;
+
 func _input(event):
 	#Movement
 	if event.is_action_pressed("ui_left"):
@@ -38,3 +40,18 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity)
 	
 	grounded = $Groundcheck.overlaps_body(tilemap)
+	
+func squashAndStretch():
+	var moving = direction.length() > 0
+	
+	if moving:
+		just_hit_ground = false
+		#Stretch in falling direction
+#		$Sprite.scale.y = range_lerp(abs(motion.y))
+		
+	elif not moving and not just_hit_ground:
+		just_hit_ground = true
+		#Squash cause just hit floor - need last fall direciton tho
+	
+	#always lerp back towards default value
+
