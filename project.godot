@@ -13,9 +13,27 @@ _global_script_classes=[ {
 "class": "InteractionManager",
 "language": "GDScript",
 "path": "res://Scripts/InteractionManager.gd"
+}, {
+"base": "Reference",
+"class": "SfxrGenerator",
+"language": "GDScript",
+"path": "res://addons/godot_sfxr/SfxrGenerator.gd"
+}, {
+"base": "Object",
+"class": "SfxrGlobals",
+"language": "GDScript",
+"path": "res://addons/godot_sfxr/SfxrGlobals.gd"
+}, {
+"base": "Object",
+"class": "SfxrStreamPlayerInterface",
+"language": "GDScript",
+"path": "res://addons/godot_sfxr/SfxrStreamPlayerInterface.gd"
 } ]
 _global_script_class_icons={
-"InteractionManager": ""
+"InteractionManager": "",
+"SfxrGenerator": "",
+"SfxrGlobals": "",
+"SfxrStreamPlayerInterface": ""
 }
 
 [application]
@@ -27,6 +45,10 @@ config/icon="res://Art/icon.png"
 [autoload]
 
 Events="*res://Scripts/Events.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot_sfxr/plugin.cfg", "res://addons/imrp/plugin.cfg" )
 
 [input]
 
