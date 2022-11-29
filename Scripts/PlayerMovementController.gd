@@ -52,7 +52,7 @@ var just_hit_ground = true;
 func squashAndStretch(delta):
 	var moving = velocity.length() > 100
 	
-	print("Moving = " + String(moving))
+#	print("Moving = " + String(moving))
 	
 	if moving: #currently falling
 		just_hit_ground = false
