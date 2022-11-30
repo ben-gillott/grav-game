@@ -19,6 +19,6 @@ visible = false
 script = ExtResource( 2 )
 
 [node name="npcsprite" type="Sprite" parent="."]
-modulate = Color( 0.937255, 0.0901961, 0.54902, 1 )
+modulate = Color( 0.215686, 0.678431, 0.635294, 1 )
 scale = Vector2( 40, 40 )
 texture = ExtResource( 3 )
