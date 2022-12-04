@@ -1,16 +1,6 @@
 extends InteractionManager
 
-onready var count = 0
+onready var yarnstory = get_node("/root/Node2D/DialogBox/YarnStory")
 
 func receive_interaction() -> void:
-	match count:
-		0:
-			print("Greetings traveller")
-		1:
-			print("I guess you're on your way out")
-		2:
-			print("Make sure to say your farewells")
-		3:
-			print("Good luck!")
-	
-	count += 1
+	yarnstory.step_through_story()

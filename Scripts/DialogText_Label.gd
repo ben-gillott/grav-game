@@ -5,8 +5,8 @@ var pg = 0;
 
 signal line_complete()
 
-func _ready():
-	start_dialog('')
+#func _ready():
+#	start_dialog('')
 
 func _input(event):
 	if (event.is_action_pressed("ui_accept")):

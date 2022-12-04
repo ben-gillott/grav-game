@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sweet_tooth_cake.png-6917f3f8487ee40637d2be9fffdcfc08.stex"
+path="res://.import/sweet_tooth_cake.png-baf874d671896a36745fccc3324597fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/godot_yarn_spinner/demo/sweet_tooth_cake.png"
-dest_files=[ "res://.import/sweet_tooth_cake.png-6917f3f8487ee40637d2be9fffdcfc08.stex" ]
+source_file="res://Art/sweet_tooth_cake.png"
+dest_files=[ "res://.import/sweet_tooth_cake.png-baf874d671896a36745fccc3324597fb.stex" ]
 
 [params]
 

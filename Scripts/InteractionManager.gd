@@ -7,6 +7,7 @@ var current_interaction: InteractionManager
 func initiate_interaction() -> void:
 	if current_interaction != null:
 		#Whoever currently interacting with, on interact, trigger dialogue etc
+		print("Interacted")
 		current_interaction.receive_interaction() 
 	else:
 		print("No current interaction")
