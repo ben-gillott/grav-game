@@ -7,7 +7,6 @@ const TEXT_TO_SYMBOL = {
 	# Relational
 	"neq": "!=",
 	"eq": "==",
-	"is": "==",
 	"gte": ">=",
 	"lte": "<=",
 	"gt": ">",

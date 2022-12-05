@@ -1,0 +1,16 @@
+title: bob_start
+position: -124,-108
+---
+<<if $visited_bob eq null>>
+  <<set $visited_bob to 0>>
+
+<<if $visited_bob>>
+    Bob: You have visited me before, player
+<<else>>
+    Bob: Hail and well met.
+    <<set $visited_bob to 1>>
+<<endif>>
+
+
+<<close_dialogue>>
+===

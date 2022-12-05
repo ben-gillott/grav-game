@@ -8,8 +8,8 @@ var inDialogue = false
 
 
 func _init():
-	commands['close_dialog'] = funcref(self, "close_dialog")
-	commands['the_end'] = funcref(self, "the_end")
+	commands['close_dialogue'] = funcref(self, "close_dialogue")
+	commands['vted'] = funcref(self, "vted")
 
 	
 func _on_YarnStory_dialogue(yarn_node, actor, message):
@@ -32,11 +32,9 @@ func _on_YarnStory_command(yarn_node, command, parameters):
 	if (commands.has(command)):
 		commands[command].call_funcv(parameters)
 
-func close_dialog():
+func close_dialogue():
 	$Dialog_Control.visible = false
 	inDialogue = false
-
-func the_end():
-	$Dialog_Control.visible = false
-	inDialogue = false
-#	$TheEnd.visible = true
+	
+func vted(nodeName):
+	print(nodeName)
