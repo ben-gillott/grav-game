@@ -9,8 +9,8 @@ var velocity = Vector2.ZERO
 var direction = Vector2(0,1)
 var grounded = true
 
-onready var dialogueTextNode = get_node("/root/Node2D/DialogBox/Dialog_Control/Box_Rect9/MarginContainer/DialogText_Label")
-onready var dialogueBoxNode = get_node("/root/Node2D/DialogBox")
+#onready var dialogueTextNode = get_node("/root/Node2D/DialogBox/Dialog_Control/Box_Rect9/MarginContainer/DialogText_Label")
+#onready var dialogueBoxNode = get_node("/root/Node2D/DialogBox")
 
 func _input(event):
 	#Movement
@@ -23,10 +23,11 @@ func _input(event):
 	elif event.is_action_pressed("ui_down"):
 		movePlayer(Vector2(0,1))
 	elif event.is_action_pressed("ui_accept"):
-		if !dialogueBoxNode.inDialogue:
-			$InteractionManager.initiate_interaction()
-		else:
-			dialogueTextNode.player_dialogue_input()
+		print("interacted")
+#		if !dialogueBoxNode.inDialogue:
+#			$InteractionManager.initiate_interaction()
+#		else:
+#			dialogueTextNode.player_dialogue_input()
 	
 func movePlayer(inputDirection):
 	if grounded:
