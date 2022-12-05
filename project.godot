@@ -28,60 +28,12 @@ _global_script_classes=[ {
 "class": "SfxrStreamPlayerInterface",
 "language": "GDScript",
 "path": "res://addons/godot_sfxr/SfxrStreamPlayerInterface.gd"
-}, {
-"base": "Resource",
-"class": "YarnCommand",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnCommand.gd"
-}, {
-"base": "Resource",
-"class": "YarnConditional",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnConditional.gd"
-}, {
-"base": "Resource",
-"class": "YarnDialogue",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnDialogue.gd"
-}, {
-"base": "Resource",
-"class": "YarnJump",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnJump.gd"
-}, {
-"base": "Resource",
-"class": "YarnNode",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnNode.gd"
-}, {
-"base": "Resource",
-"class": "YarnOption",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnOption.gd"
-}, {
-"base": "Resource",
-"class": "YarnShortcutOption",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnShortcutOption.gd"
-}, {
-"base": "Resource",
-"class": "YarnStory",
-"language": "GDScript",
-"path": "res://addons/godot_yarn_spinner/resources/YarnStory.gd"
 } ]
 _global_script_class_icons={
 "InteractionManager": "",
 "SfxrGenerator": "",
 "SfxrGlobals": "",
-"SfxrStreamPlayerInterface": "",
-"YarnCommand": "",
-"YarnConditional": "",
-"YarnDialogue": "",
-"YarnJump": "",
-"YarnNode": "",
-"YarnOption": "",
-"YarnShortcutOption": "",
-"YarnStory": ""
+"SfxrStreamPlayerInterface": ""
 }
 
 [application]
@@ -96,7 +48,7 @@ Events="*res://Scripts/Events.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/godot_sfxr/plugin.cfg", "res://addons/godot_yarn_spinner/plugin.cfg", "res://addons/imrp/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/godot_sfxr/plugin.cfg", "res://addons/imrp/plugin.cfg" )
 
 [input]
 
