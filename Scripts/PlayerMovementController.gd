@@ -24,6 +24,7 @@ func _input(event):
 		movePlayer(Vector2(0,1))
 	elif event.is_action_pressed("ui_accept"):
 		print("interacted")
+		get_node("/root/TestDisplay").display_next_line()
 #		if !dialogueBoxNode.inDialogue:
 #			$InteractionManager.initiate_interaction()
 #		else:

@@ -1,13 +1,13 @@
 [remap]
 
-importer="com.technohacker.yarn"
-type="GDScript"
-path="res://.import/simple_test.yarn-d363c038a0718f4deb4d79a60f8cbf52.gd"
+importer="gdyarn.yarnFile"
+type="Resource"
+path="res://.import/simple_test.yarn-d363c038a0718f4deb4d79a60f8cbf52.tres"
 
 [deps]
 
 source_file="res://dialogue/simple_test.yarn"
-dest_files=[ "res://.import/simple_test.yarn-d363c038a0718f4deb4d79a60f8cbf52.gd" ]
+dest_files=[ "res://.import/simple_test.yarn-d363c038a0718f4deb4d79a60f8cbf52.tres" ]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Art/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/OptionsList.gd" type="Script" id=2]
-[ext_resource path="res://dialogue/test_2.yarn" type="Script" id=3]
+[ext_resource path="res://dialogue/bob.yarn" type="Script" id=3]
 [ext_resource path="res://Art/menu_section_9patch.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/DialogText_Label.gd" type="Script" id=5]
 [ext_resource path="res://Scripts/DialogBox.gd" type="Script" id=7]
