@@ -107,7 +107,83 @@
 "L3option_1": 6,
 "L4option_2": 9
 },
-"node_name": "Start",
+"node_name": "node1",
+"node_source_id": "",
+"node_tags": [  ]
+}, {
+"node_instructions": [ {
+"instruction_op": 0,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "L5"
+} ]
+}, {
+"instruction_op": 3,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "line:56f6a023"
+}, {
+"operand_type": 3,
+"operand_value": 0.0
+} ]
+}, {
+"instruction_op": 5,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "line:472a7ad"
+}, {
+"operand_type": 1,
+"operand_value": "L7option_1"
+}, {
+"operand_type": 3,
+"operand_value": 0.0
+} ]
+}, {
+"instruction_op": 6,
+"instruction_operands": [  ]
+}, {
+"instruction_op": 2,
+"instruction_operands": [  ]
+}, {
+"instruction_op": 0,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "L7option_1"
+} ]
+}, {
+"instruction_op": 3,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "line:3dd07b34"
+}, {
+"operand_type": 3,
+"operand_value": 0.0
+} ]
+}, {
+"instruction_op": 1,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "L6group_end"
+} ]
+}, {
+"instruction_op": 0,
+"instruction_operands": [ {
+"operand_type": 1,
+"operand_value": "L6group_end"
+} ]
+}, {
+"instruction_op": 12,
+"instruction_operands": [  ]
+}, {
+"instruction_op": 16,
+"instruction_operands": [  ]
+} ],
+"node_labels": {
+"L5": 0,
+"L6group_end": 8,
+"L7option_1": 5
+},
+"node_name": "node2",
 "node_source_id": "",
 "node_tags": [  ]
 } ]

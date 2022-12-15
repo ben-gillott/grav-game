@@ -1,0 +1,53 @@
+{
+	"events": [
+		{
+			"character": "character-1671077459.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey there."
+		},
+		{
+			"character": "character-1671077472.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Suh."
+		},
+		{
+			"character": "character-1671077459.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You hungry?"
+		},
+		{
+			"choice": "Yep",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1671077459.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Rip\nOk"
+		},
+		{
+			"choice": "Nah",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1671077441.json",
+		"name": "bob-convo-1"
+	}
+}

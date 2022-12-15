@@ -1,6 +1,9 @@
 id	text	file	node	lineNumber	implicit	tags
-line:8d0d3fcc	Do you like Godot? 	bob.yarn	Start	0	False	
-line:c96b8156	Yes 	bob.yarn	Start	1	False	
-line:2d856acc	No 	bob.yarn	Start	3	False	
-line:a3efbb4f	Right on! 	bob.yarn	Start	2	False	
-line:a841dab1	Well, thats unfortunate... 	bob.yarn	Start	4	False	
+line:8d0d3fcc	Do you like Godot? 	bob.yarn	node1	0	False	
+line:c96b8156	Yes 	bob.yarn	node1	1	False	
+line:2d856acc	No 	bob.yarn	node1	3	False	
+line:a3efbb4f	Right on! 	bob.yarn	node1	2	False	
+line:a841dab1	Well, thats unfortunate... 	bob.yarn	node1	4	False	
+line:56f6a023	Hello there 	bob.yarn	node2	0	False	
+line:472a7ad	What? 	bob.yarn	node2	1	False	
+line:3dd07b34	What yourself. 	bob.yarn	node2	2	False	
