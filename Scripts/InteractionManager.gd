@@ -28,14 +28,13 @@ func _on_InteractionManager_area_exited(area):
 func start_dialog(timeline):
 	if !Globals.inDialog:
 		Globals.inDialog = true
+		Globals.canMove = false
 		var dialog = Dialogic.start(timeline)
 		get_parent().add_child(dialog)
-		dialog.pause_mode = PAUSE_MODE_PROCESS
 		dialog.connect("timeline_end", self, "end_dialog")
-		get_tree().paused = true
-		
+
 func end_dialog(timeline):
 	print("Ending timeline ", timeline)
-	get_tree().paused = false
+	Globals.canMove = true
 	yield(get_tree().create_timer(1.5), "timeout")
 	Globals.inDialog = false

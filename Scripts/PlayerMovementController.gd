@@ -25,7 +25,7 @@ func _input(event):
 
 	
 func movePlayer(inputDirection):
-	if grounded:
+	if grounded && Globals.canMove:
 		direction = inputDirection
 	
 func _physics_process(delta):
