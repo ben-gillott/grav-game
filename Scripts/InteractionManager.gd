@@ -34,6 +34,8 @@ func start_dialog(timeline):
 		dialog.connect("timeline_end", self, "end_dialog")
 		get_tree().paused = true
 		
-func end_dialog():
-	print("Ending timeline")
+func end_dialog(timeline):
+	print("Ending timeline ", timeline)
 	get_tree().paused = false
+	yield(get_tree().create_timer(1.5), "timeout")
+	Globals.inDialog = false
