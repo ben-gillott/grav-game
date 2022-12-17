@@ -110,9 +110,7 @@ config/icon="res://Art/icon.png"
 
 [autoload]
 
-Events="*res://Scripts/Events.gd"
-NumberPlurals="*res://addons/gdyarn/autoloads/number_plurals.gd"
-YarnGlobals="*res://addons/gdyarn/autoloads/execution_states.gd"
+Globals="*res://Scripts/Globals.gd"
 
 [editor_plugins]
 

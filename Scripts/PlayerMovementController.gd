@@ -9,10 +9,6 @@ var velocity = Vector2.ZERO
 var direction = Vector2(0,1)
 var grounded = true
 
-#onready var dialogueTextNode = get_node("/root/Node2D/DialogBox/Dialog_Control/Box_Rect9/MarginContainer/DialogText_Label")
-onready var signalsNode = get_node("/root/Node2D")
-
-var inDialogue = false
 
 func _input(event):
 	#Movement
@@ -25,10 +21,8 @@ func _input(event):
 	elif event.is_action_pressed("ui_down"):
 		movePlayer(Vector2(0,1))
 	elif event.is_action_pressed("ui_accept"):
-		if !inDialogue:
-			inDialogue = true
-			var dialog = Dialogic.start("bob-convo-1")
-			add_child(dialog)
+		$InteractionManager.initiate_interaction()
+
 	
 func movePlayer(inputDirection):
 	if grounded:
