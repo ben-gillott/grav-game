@@ -8,6 +8,12 @@
 			"name": "visited_bob",
 			"type": 0,
 			"value": "false"
+		},
+		{
+			"id": "1671333274-660",
+			"name": "visited_bowie",
+			"type": 0,
+			"value": "false"
 		}
 	]
 }

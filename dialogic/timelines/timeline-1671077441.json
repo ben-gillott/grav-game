@@ -10,13 +10,13 @@
 			"character": "character-1671077459.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Nice to meetcha."
+			"text": "Hail and well met. I am bobson son of bob."
 		},
 		{
 			"character": "character-1671077472.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Suh."
+			"text": "Uh, hello..."
 		},
 		{
 			"definition": "1671260299-648",
@@ -43,7 +43,7 @@
 			"character": "character-1671077459.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Good to see ya again."
+			"text": "Good to see you again."
 		},
 		{
 			"event_id": "dialogic_022",

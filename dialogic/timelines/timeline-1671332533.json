@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"definition": "1671333274-660",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"character": "character-1671332539.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*blub blub blub*"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "/The small beta fish seems quite content in his tank /"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1671332533.json",
+		"name": "c-bowie"
+	}
+}

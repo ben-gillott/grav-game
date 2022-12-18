@@ -4,8 +4,6 @@ class_name InteractionManager
 
 var current_interaction: InteractionManager
 
-export var npcName = "NPC Name"
-
 func initiate_interaction() -> void:
 	if current_interaction != null:
 		current_interaction.receive_interaction() 
@@ -13,7 +11,7 @@ func initiate_interaction() -> void:
 		print("No current interaction")
 
 func receive_interaction() -> void:
-	start_dialog(npcName)
+	start_dialog(get_parent().timelineName)
 
 func _on_InteractionManager_area_entered(area):
 	#TODO: Check if closer than current interaction

@@ -1,0 +1,110 @@
+{
+	"events": [
+		{
+			"character": "character-1671332498.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 0.5,
+			"waiting_skippable": true
+		},
+		{
+			"character": "character-1671332498.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...i think bowie is depressed."
+		},
+		{
+			"character": "character-1671332498.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "i mean look at him! does he look sad to you?"
+		},
+		{
+			"choice": "Not really",
+			"condition": "",
+			"definition": "1671333274-660",
+			"event_id": "dialogic_011",
+			"value": "true"
+		},
+		{
+			"character": "character-1671077472.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nah, he seemed fine to me"
+		},
+		{
+			"character": "character-1671332498.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "thanks... i still think im a bad fish mom.."
+		},
+		{
+			"choice": "Who?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1671077472.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You mean David Bowie?"
+		},
+		{
+			"anchor_id": "anchor-1671333512",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "I'm not sure",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1671077472.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't think it's my place to say, you should ask him about it though"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1671333512",
+			"index": 0,
+			"name": "c-huff"
+		},
+		{
+			"character": "character-1671332498.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "you don't even remember my fish's name do you."
+		},
+		{
+			"character": "character-1671077472.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1671332486.json",
+		"name": "c"
+	}
+}
