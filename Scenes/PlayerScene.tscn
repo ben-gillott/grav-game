@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Art/1x1pxsquare.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/PlayerMovementController.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/InteractionManager.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Art/sfx/mixkit-martial-arts-punch-2052.wav" type="AudioStream" id=4]
+[ext_resource path="res://Art/sfx/mixkit-small-hit-in-a-game-2072.wav" type="AudioStream" id=5]
+[ext_resource path="res://addons/godot_sfxr/SfxrStreamPlayer2D.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 32, 32 )
@@ -33,10 +36,69 @@ one_way_collision_margin = 0.0
 
 [node name="InteractionManager" parent="." instance=ExtResource( 3 )]
 visible = false
-npcName = "Player"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 0.8, 0.8 )
 smoothing_enabled = true
 smoothing_speed = 6.0
+
+[node name="PlayerSFX" type="Node2D" parent="."]
+
+[node name="land" type="AudioStreamPlayer2D" parent="PlayerSFX"]
+stream = ExtResource( 4 )
+script = ExtResource( 6 )
+wave/type = 1
+sample_params/sound_vol = 0.25
+sample_params/sample_rate = 44100.0
+envelope/attack_time = 0.0
+envelope/sustain_time = 0.6641
+envelope/punch_time = 0.0
+envelope/decay_time = 0.0
+frequency/start_frequency = 0.351734
+frequency/min_freq_cutoff = 0.0
+frequency/slide = 0.0
+frequency/delta_slide = 0.0
+vibrato/depth = 0.0
+vibrato/speed = 0.0
+arpeggiation/frequency_mult = 0.0
+arpeggiation/change_speed = 0.0
+duty_cycle/duty_cycle = 0.0
+duty_cycle/sweep = 0.0
+retrigger/rate = 0.0
+flanger/offset = 0.0
+flanger/sweep = 0.0
+low_pass_filter/cutoff_frequency = 1.0
+low_pass_filter/cutoff_sweep = 0.0
+low_pass_filter/resonance = 0.0
+high_pass_filter/cutoff_frequency = 0.0
+high_pass_filter/cutoff_sweep = 0.0
+
+[node name="takeoff" type="AudioStreamPlayer2D" parent="PlayerSFX"]
+stream = ExtResource( 5 )
+script = ExtResource( 6 )
+wave/type = 1
+sample_params/sound_vol = 0.25
+sample_params/sample_rate = 44100.0
+envelope/attack_time = 0.0
+envelope/sustain_time = 0.6641
+envelope/punch_time = 0.0
+envelope/decay_time = 0.0
+frequency/start_frequency = 0.351734
+frequency/min_freq_cutoff = 0.0
+frequency/slide = 0.0
+frequency/delta_slide = 0.0
+vibrato/depth = 0.0
+vibrato/speed = 0.0
+arpeggiation/frequency_mult = 0.0
+arpeggiation/change_speed = 0.0
+duty_cycle/duty_cycle = 0.0
+duty_cycle/sweep = 0.0
+retrigger/rate = 0.0
+flanger/offset = 0.0
+flanger/sweep = 0.0
+low_pass_filter/cutoff_frequency = 1.0
+low_pass_filter/cutoff_sweep = 0.0
+low_pass_filter/resonance = 0.0
+high_pass_filter/cutoff_frequency = 0.0
+high_pass_filter/cutoff_sweep = 0.0

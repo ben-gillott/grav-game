@@ -27,6 +27,7 @@ func _input(event):
 func movePlayer(inputDirection):
 	if grounded && Globals.canMove:
 		direction = inputDirection
+		$PlayerSFX/takeoff.play()
 	
 func _physics_process(delta):
 	

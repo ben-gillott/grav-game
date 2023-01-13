@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/567047__sheyvan__skateboard-wheel-1-9.wav-4df4d1fb0fcf339fd05ed3b4022f0db4.sample"
+
+[deps]
+
+source_file="res://Art/sfx/567047__sheyvan__skateboard-wheel-1-9.wav"
+dest_files=[ "res://.import/567047__sheyvan__skateboard-wheel-1-9.wav-4df4d1fb0fcf339fd05ed3b4022f0db4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
