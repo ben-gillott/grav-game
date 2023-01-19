@@ -65,6 +65,7 @@ func squashAndStretch(delta):
 			stretchY()
 	elif not moving and not just_hit_ground:
 		just_hit_ground = true
+		$PlayerSFX/land.play()
 		#Squash cause just hit floor - need last fall direciton tho
 		if(abs(direction.x) == 1):
 			squashX()
